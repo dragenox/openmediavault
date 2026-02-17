@@ -1,13 +1,16 @@
 Source: openmediavault
 Section: admin
 Priority: optional
-Maintainer: Volker Theile <volker.theile@openmediavault.org>
+Maintainer: Ishan D. Gupta (@dragenox) <ishan.d.gupta@outlook.com>
 Build-Depends: debhelper (>= 12), gettext, doxygen, make, npm
 Standards-Version: 3.9.6
-Homepage: https://www.openmediavault.org
+Homepage: https://github.com/dragenox/bizzadrive
 
-Package: openmediavault
+Package: bizzadrive-omv
 Architecture: all
+Provides: openmediavault
+Conflicts: openmediavault
+Replaces: openmediavault
 Conflicts: gdm3, sddm, lxdm, xdm, lightdm, slim, wdm, cloud-init
 Depends: php-fpm, libpam-modules, php-json, dpkg, patch, dash, mawk | gawk,
  php-cgi, php-cli, php-mbstring, php-pam, sudo, ethtool, python3-dialog,
