@@ -9,9 +9,8 @@ Homepage: https://github.com/dragenox/bizzadrive
 Package: bizzadrive-omv
 Architecture: all
 Provides: openmediavault
-Conflicts: openmediavault
+Conflicts: openmediavault, gdm3, sddm, lxdm, xdm, lightdm, slim, wdm, cloud-init
 Replaces: openmediavault
-Conflicts: gdm3, sddm, lxdm, xdm, lightdm, slim, wdm, cloud-init
 Depends: php-fpm, libpam-modules, php-json, dpkg, patch, dash, mawk | gawk,
  php-cgi, php-cli, php-mbstring, php-pam, sudo, ethtool, python3-dialog,
  python3-samba, acl, iproute2, xfsprogs, jfsutils, ntfs-3g, wsdd-server,
