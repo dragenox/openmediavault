@@ -1,8 +1,10 @@
 bizzadrive-omv (8.1.0-2-bd1) stable; urgency=medium
 
-  * Initial BizzaDrive fork based on openmediavault 8.1.0-2.
+  * Initial BizzaDriveOS fork based on openmediavault 8.1.0-2.
   * Rename binary package to bizzadrive-omv.
-  * Update maintainer and homepage metadata.
+  * Add versioned Provides for openmediavault dependency compatibility.
+  * Add bizzadrive-omv debhelper package files for install/service hooks.
+  * Apply BizzaDriveOS branding in package and Workbench UI metadata.
 
  -- Ishan D. Gupta (@dragenox) <ishan.d.gupta@outlook.com>  Wed, 18 Feb 2026 00:00:00 +0000
 

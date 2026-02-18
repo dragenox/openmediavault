@@ -8,7 +8,7 @@ Homepage: https://github.com/dragenox/bizzadrive
 
 Package: bizzadrive-omv
 Architecture: all
-Provides: openmediavault
+Provides: openmediavault (= ${binary:Version})
 Conflicts: openmediavault, gdm3, sddm, lxdm, xdm, lightdm, slim, wdm, cloud-init
 Replaces: openmediavault
 Depends: php-fpm, libpam-modules, php-json, dpkg, patch, dash, mawk | gawk,
@@ -30,8 +30,8 @@ Depends: php-fpm, libpam-modules, php-json, dpkg, patch, dash, mawk | gawk,
  python3-polib, libnss-systemd, libnss-resolve, debian-archive-keyring,
  openmediavault-keyring, systemd-resolved, python3-packaging,
  unattended-upgrades, apt-listchanges, apticron, ${misc:Depends}
-Description: openmediavault - The open network attached storage solution
- openmediavault is a small and simple to use network attached storage system
+Description: BizzaDriveOS - powered by openmediavault
+ BizzaDriveOS powered by openmediavault is a small and simple to use network attached storage system
  with a smart WebGUI.
 
 Package: openmediavault-installer
