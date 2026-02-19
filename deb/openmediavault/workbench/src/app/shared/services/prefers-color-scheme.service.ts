@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { UserLocalStorageService } from '~/app/shared/services/user-local-storage.service';
 
 export type PrefersColorScheme = 'light' | 'dark';
+const DEFAULT_PREFERS_COLOR_SCHEME: PrefersColorScheme = 'dark';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +26,7 @@ export class PrefersColorSchemeService {
   public get(): PrefersColorScheme {
     return (
       (this.userLocalStorageService.get('prefers-color-scheme') as PrefersColorScheme) ||
-      this.detectSystemTheme()
+      DEFAULT_PREFERS_COLOR_SCHEME
     );
   }
 
@@ -58,9 +59,5 @@ export class PrefersColorSchemeService {
    */
   public toggle(): PrefersColorScheme {
     return this.set(this.current === 'dark' ? 'light' : 'dark');
-  }
-
-  private detectSystemTheme(): PrefersColorScheme {
-    return window.matchMedia?.('(prefers-color-schema: dark)').matches ? 'dark' : 'light';
   }
 }
